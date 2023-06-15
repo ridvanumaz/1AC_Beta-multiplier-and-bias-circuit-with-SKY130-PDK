@@ -1,0 +1,36 @@
+** sch_path: /home/ridvan/1_Buck Converter_example/Beta_multiplier/Xschem/1_nmos_vgs.sch
+**.subckt 1_nmos_vgs
+XM1 VDS net1 GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+VGS net1 GND 1.155
+.save i(vgs)
+VDS net2 GND 3.3
+.save i(vds)
+VM1 net2 VDS 0
+.save i(vm1)
+**** begin user architecture code
+
+.options savecurrents
+.control
+save all
+save @m.xm1.msky130_fd_pr__nfet_g5v0d10v5[gm]
+dc VGS 0.4 1.8 1m
+write simulation/1_nmos_vgs.raw
+*plot @m.xm1.msky130_fd_pr__nfet_g5v0d10v5[id]
+plot vm1#branch
+set appendwrite
+op
+write simulation/1_nmos_vgs.raw
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
