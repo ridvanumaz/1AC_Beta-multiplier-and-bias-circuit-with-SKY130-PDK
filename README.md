@@ -24,6 +24,7 @@ ln -s /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
 ```
 
 ## 1) Beta Multiplier 
+### Schematic
 <p align="center">
   <img src="/results/beta_multiplier_schematic.png">
 </p>
@@ -43,6 +44,7 @@ ln -s /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
 </p>
 
 ## 2) Bias Circuit
+### Schematic
 <p align="center">
   <img src="/results/bias_circuit_schematic.png">
 </p>
