@@ -56,7 +56,12 @@ ln -s /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
   <img src="/results/bias_circuit_op.png">
 </p>
 
+## References 
+$[1]$ Xschem manual https://xschem.sourceforge.io/stefan/xschem_man/xschem_man.html
 
+$[2]$ ngspice manual https://ngspice.sourceforge.io/docs.html
+
+$[3]$ R. J. Baker, CMOS: Circuit Design Layout and Simulation, Hoboken, NJ, USA:Wiley, 2019.
 
 
 
