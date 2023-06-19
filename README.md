@@ -17,7 +17,44 @@ EDA tools are used in this repo as follows:
 ## Requirement
 assumed already install [ngspice](https://ngspice.sourceforge.io/download.html), [xschem](https://github.com/StefanSchippers/xschem) along the [SKY130 PDK](http://opencircuitdesign.com/open_pdks/index.html) 
 
-In order to simulate the design, xschemrc and spiceinit files should be linked to xschem file in this repo. 
+In order to simulate the design, xschemrc and spiceinit files should be linked to [xschem file](https://github.com/ridvanumaz/1AC_Beta-multiplier-and-bias-circuit-with-SKY130-PDK/tree/main/xschem) in this repo. 
+```
+ln -s /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
+ln -s /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
+```
 
-## Beta Multiplier 
+## 1) Beta Multiplier 
+<p align="center">
+  <img src="/results/beta_multiplier_schematic.png">
+</p>
+
+### Results
+
+#### Operating point analysis (op)
+<p align="center">
+  <img src="/results/beta_multiplier_op.png">
+</p>
+
+#### Supply variation analysis 
+<p float="left">
+  <img src="/results/beta_multiplier_result_Iref.png" width="45%" />
+  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="/results/beta_multiplier_result_Vbias.png" width="45%" /> 
+</p>
+
+## 2) Bias Circuit
+<p align="center">
+  <img src="/results/bias_circuit_schematic.png">
+</p>
+
+### Results
+
+#### Operating point analysis (op)
+<p align="center">
+  <img src="/results/bias_circuit_op.png">
+</p>
+
+
+
+
 
