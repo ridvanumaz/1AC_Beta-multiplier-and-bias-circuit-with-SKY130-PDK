@@ -17,7 +17,7 @@ EDA tools are used in this repo as follows:
 ## Requirement
 assumed already install [ngspice](https://ngspice.sourceforge.io/download.html), [xschem](https://github.com/StefanSchippers/xschem) along the [SKY130 PDK](http://opencircuitdesign.com/open_pdks/index.html) 
 
-In order to simulate the design, xschemrc and spiceinit files should be linked to [xschem file](https://github.com/ridvanumaz/1AC_Beta-multiplier-and-bias-circuit-with-SKY130-PDK/tree/main/xschem) in this repo. 
+In order to simulate the design, xschemrc and spinit files should be linked to [xschem file](https://github.com/ridvanumaz/1AC_Beta-multiplier-and-bias-circuit-with-SKY130-PDK/tree/main/xschem) in this repo. 
 ```
 ln -s /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc
 ln -s /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
