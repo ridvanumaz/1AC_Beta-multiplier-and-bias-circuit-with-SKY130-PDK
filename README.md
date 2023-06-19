@@ -13,3 +13,11 @@ EDA tools are used in this repo as follows:
  Skywater 130nm techology is used.
 [![image](https://user-images.githubusercontent.com/49194847/138075630-d1bdacac-d37b-45d3-88b5-80f118af37cd.png)](https://skywater-pdk.readthedocs.io/en/main/)
 [Techology SkyWater SKY130 PDK](https://skywater-pdk.readthedocs.io/en/main/)
+
+## Requirement
+assumed already install [ngspice](https://ngspice.sourceforge.io/download.html), [xschem](https://github.com/StefanSchippers/xschem) along the [SKY130 PDK](http://opencircuitdesign.com/open_pdks/index.html) 
+
+In order to simulate the design, xschemrc and spiceinit files should be linked to xschem file in this repo. 
+
+## Beta Multiplier 
+
